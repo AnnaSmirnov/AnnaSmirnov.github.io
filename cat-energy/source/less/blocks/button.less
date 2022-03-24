@@ -1,0 +1,23 @@
+.button {
+  background-color: @basic_green;
+  .font-oswald-uppercase( 14px, 18px);
+  color: @basic_white;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 17px;
+
+  &:hover {
+    background-color: @basic_green-2;
+  }
+
+  &:active {
+    color: rgba(@basic_white, 30%);
+  }
+
+  .tablet ({
+    .font-oswald-uppercase( 20px, 20px);
+    color: @basic_white;
+  });
+}

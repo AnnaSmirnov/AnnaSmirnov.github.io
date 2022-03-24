@@ -1,7 +1,181 @@
 <!DOCTYPE html>
-<html>
-<body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
-</body>
-</html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
+    <title>HTML-верстальщик | Смирнова Анна</title>
+    </head>
+    <body class="page">
+    <header class="page-header">
+        <div class="header__wrapper">
+            <nav class="header__nav nav">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a class="nav__link" href="#about-me">Обо мне</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link" href="#projects">Мои проекты</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link" href="#certificates">Сертификаты</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link" href="#contacts">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="main">
+        <h1 class="visually-hidden">Портфолио Junior HTML-верстальщика.Смирнова Анна.</h1>
+        <section class="main__about-me about-me" id="about-me">
+            <h2 class="title about-me__title">Обо мне</h2>
+            <div class="about-me__wrapper">
+                <div class="about-me__photo-wrapper">
+                    <img class="about-me__photo" src="img/photo.jpg" alt="Смирнова Анна" width="147" height="147">
+                </div>
+                <div class="about-me__text">
+                    <p class="about-me__paragraph about-me__paragraph--hello">
+                        Привет! Меня зовут <b>Аня</b> и это мой сайт-портфолио.
+                    </p>
+                    <p class="about-me__paragraph about-me__paragraph--qualification">
+                        Я начинающий HTML-верстальщик. Работаю с применением современных стандартов, таких как кроссбраузерная, адаптивная и валидная верстка. При работе с проектом могу применить базовую оптимизацию и написать простые JS-скрипты для оживления сайта.
+                        Для обеспечения выполнения требований, предъявляемых к верстке сайта в процессе работы над проектом я использую: media-запросы для адаптивной верстки сайта, сборщик проектов Gulp, препроцессор Less,Pixel Perfect, БЭМ.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="main__projects projects" id="projects">
+            <h2 class="projects__title title">Мои проекты</h2>
+            <ul class="projects__list">
+                <li class="projects__item project">
+                    <h3 class="project__title project__title--technomart">Техномарт</h3>
+                    <p class="project__paragraph project__paragraph--description">Выпускной проект на курсе "HTML и CSS. Профессиональная вёрстка сайтов"</p>
+                    <section class="project__gallery gallery">
+                        <h4 class="visually-hidden">Галерея фотографий проекта</h4>
+                        <div class="gallery__wrapper">
+                            <button class="gallery__button gallery__button--prev" type="button" aria-label="Предыдущий слайд."></button>
+                            <button class="gallery__button gallery__button--next" type="button" aria-label="Следующий слайд."></button>
+                            <ul class="gallery__list">
+                                <li class="gallery__item  gallery__item--current">
+                                    <a class="gallery__link" href="technomart/index.html" aria-label="Открыть страницу">Открыть</a>
+                                    <img class="gallery__image" src="img/technomart/index.png" alt="Превью главной страницы сайта Техномарт." width="400" height="300">
+                                </li>
+                                <li class="gallery__item">
+                                    <a class="gallery__link" href="technomar/catalog.html" aria-label="Открыть страницу">Открыть</a>
+                                    <img class="gallery__image" src="img/technomart/catalog.png" alt="Превью страницы каталога сайта Техномарт." width="400" height="300">
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+                    <p class="project__paragraph">Код проекта на
+                        <a class="project__link" href="https://github.com/AnnaSmirnov/1781931-technomart-31">GitHub</a>
+                    </p>
+                </li>
+                <li class="projects__item project">
+                    <h3 class="project__title project__title--cat">Cat Energy</h3>
+                    <p class="project__paragraph project__paragraph--description">Выпускной проект на курсе "HTML и CSS. Адаптивная вёрстка и автоматизация"</p>
+                    <section class="project__gallery gallery">
+                        <h4 class="visually-hidden">Галерея фотографий проекта</h4>
+                        <div class="gallery__wrapper">
+                            <button class="gallery__button gallery__button--prev" type="button" aria-label="Предыдущий слайд."></button>
+                            <button class="gallery__button gallery__button--next" type="button" aria-label="Следующий слайд."></button>
+                            <ul class="gallery__list">
+                                <li class="gallery__item gallery__item--current">
+                                    <a class="gallery__link" href="cat-energy/build/index.html" aria-label="Открыть страницу">Открыть</a>
+                                    <img class="gallery__image" src="img/cat_energy/index.png" alt="Превью главной страницы сайта Кэт Энерджи." width="400" height="300">
+                                </li>
+                                <li class="gallery__item">
+                                    <a class="gallery__link" href="projects/cat_energy/catalog.html" aria-label="Открыть страницу">Открыть</a>
+                                    <img class="gallery__image" src="img/cat_energy/catalog.png" alt="Превью страницы каталога сайта Кэт Энерджи." width="400" height="300">
+                                </li>
+                                <li class="gallery__item">
+                                    <a class="gallery__link" href="projects/cat_energy/form.html" aria-label="Открыть страницу">Открыть</a>
+                                    <img class="gallery__image" src="img/cat_energy/form.png" alt="Превью страницы с формой сайта Кэт Энерджи." width="400" height="300">
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+                    <p class="project__paragraph">Код проекта на
+                        <a class="project__link" href="https://github.com/AnnaSmirnov/1781931-cat-energy-23">GitHub</a>
+                    </p>
+                </li>
+                <li class="projects__item project">
+                    <h3 class="project__title project__title--kekstogram">Keksobooking</h3>
+                    <p class="project__paragraph project__paragraph--description">Выпускной проект на курсе "JavaScript. Профессиональная разработка веб-интерфейсов"</p>
+                    <section class="project__gallery gallery">
+                        <h4 class="visually-hidden">Галерея фотографий проекта</h4>
+                        <div class="gallery__wrapper">
+                            <button class="gallery__button gallery__button--prev" type="button" aria-label="Предыдущий слайд."></button>
+                            <button class="gallery__button gallery__button--next" type="button" aria-label="Следующий слайд."></button>
+                            <ul class="gallery__list">
+                                <li class="gallery__item gallery__item--current">
+                                    <a class="gallery__link" href="keksobooking/index.html" aria-label="Открыть страницу">Oткрыть</a>
+                                    <img class="gallery__image" src="img/keksobooking/index.png" alt="Превью главной страницы Кексобукинг." width="400" height="300">
+                                </li>
+                                <li class="gallery__item">
+                                    <a class="gallery__link" href="keksobooking/index.html" aria-label="Открыть страницу">Oткрыть</a>
+                                    <img class="gallery__image" src="img/keksobooking/filter.png" alt="Форма поиска" width="400" height="300">
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+                    <p class="project__paragraph">Код проекта на
+                        <a class="project__link" href="https://github.com/AnnaSmirnov/1781931-keksobooking-24">GitHub</a>
+                    </p>
+                </li>
+            </ul>
+        </section>
+        <section class="main__certificates certificates" id="certificates">
+            <h2 class="certificates__title title">Сертификаты</h2>
+            <ul class="certificates__list">
+                <li class="certificates__item">
+                    <a class="certificates__image-link" href="https://assets.htmlacademy.ru/certificates/intensive/195/1781931.pdf?1626450026">
+                        <img class="certificates__image" src="img/certificates/certificate1.png" alt="Сертификат интенсива по профессиональной вёрстке сайтов." width="200" height="282">
+                    </a>
+                    <a class="certificates__link" href="https://assets.htmlacademy.ru/certificates/intensive/195/1781931.pdf?1626450026">HTML и CSS. Профессиональная вёрстка сайтов</a>
+                </li>
+                <li class="certificates__item">
+                    <a class="certificates__image-link" href="https://assets.htmlacademy.ru/certificates/intensive/201/1781931.pdf?1632142176">
+                        <img class="certificates__image" src="img/certificates/certificate2.png" alt="Сертификат интенсива по адаптивной вёрстке и автоматизации." width="200" height="282">
+                    </a>
+                    <a class="certificates__link" href="https://assets.htmlacademy.ru/certificates/intensive/201/1781931.pdf?1632142176">HTML и CSS. Адаптивная вёрстка и автоматизация</a>
+                </li>
+                <li class="certificates__item">
+                    <a class="certificates__image-link" href="https://assets.htmlacademy.ru/certificates/intensive/207/1781931.pdf?1639482280">
+                        <img class="certificates__image" src="img/certificates/certificate3.png" alt="Сертификат интенсива по профессиональной разработке веб-интерфейсов." width="200" height="282">
+                    </a>
+                    <a class="certificates__link" href="https://assets.htmlacademy.ru/certificates/intensive/207/1781931.pdf?1639482280">JavaScript. Профессиональная разработка веб-интерфейсов</a>
+                </li>
+            </ul>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer__wrapper">
+            <section class="footer__contacts contacts" id="contacts">
+                <h2 class="visually-hidden">Контакты</h2>
+                <p class="contacts__paragraph">Написать мне:</p>
+                <ul class="contacts__list">
+                    <li class="contacts__item">
+                        <a class="contacts__link" href="https://t.me/Annushka_arty"  title="В Телеграм">
+                            <svg class="contacts__icon contacts__icon--telegram" width="30" height="30" viewBox="0 0 20 20">
+                                <use xlink:href="img/svg/sprite.svg#telegram"></use>
+                            </svg>
+                            @Annushka_arty</a>
+                    </li>
+                    <li class="contacts__item">
+                        <a class="contacts__link" href="mailto:ezhyk-ezhyk@mail.ru" title="На почту">
+                            <svg class="contacts__icon contacts__icon--mail" width="40" height="30" viewBox="0 0 20 15">
+                                <use xlink:href="img/svg/sprite.svg#mail"></use>
+                            </svg>
+                            ezhyk-ezhyk@mail.ru</a>
+                    </li>
+                </ul>
+            </section>
+        </div>
+    </footer>
+    <script src="index.js"></script>
+    </body>
+    </html>

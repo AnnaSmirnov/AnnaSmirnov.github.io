@@ -1,0 +1,98 @@
+.card-more {
+  border-bottom: 1px solid @special_grey;
+  border-left: 1px solid @special_grey;
+  border-right: 1px solid @special_grey;
+  border-top: none;
+  padding-top: 13px;
+  padding-bottom: 19px;
+  display: flex;
+  flex-direction: column;
+
+  &:first-of-type {
+    border-top: 1px solid @special_grey;
+  }
+
+  .tablet ({
+    padding: 27px 38px 28px 38px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 23px;
+  });
+
+  .desktop({
+    border-left: none;
+    border-right: none;
+    padding: 15px 0 16px 0;
+    gap: unset;
+    justify-content: space-between;
+  });
+}
+
+.card-more__title {
+  .font-oswald-uppercase(16px,16px);
+  color: @special_dark-grey-2;
+  .offset_zero();
+  margin-bottom: 12px;
+
+  .tablet ({
+    .font-oswald-uppercase(20px,20px);
+    margin-right: auto;
+    margin-bottom: 0;
+  });
+}
+
+.card-more__list {
+  .list();
+  .font-arial(14px,14px);
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+
+
+  .tablet ({
+    .font-arial(16px,20px);
+    margin-bottom: 0;
+  });
+
+  .desktop ({
+    margin-right: 38px;
+    justify-content: space-between;
+    width: 290px;
+  });
+}
+
+.card-more__amount {
+  .desktop({
+    padding-top: 10px;
+  });
+}
+
+.card-more__price {
+  .tablet ({
+    margin-left: 49px;
+  });
+
+  .desktop({
+    margin-left: 0;
+    padding-top: 10px;
+  });
+}
+
+.card-more__button {
+  .font-oswald-uppercase( 16px,20px);
+  color: @basic_white;
+  min-width: 100%;
+  min-height: 40px;
+
+  .tablet ({
+    .font-oswald-uppercase( 16px,0);
+    color: @basic_white;
+  });
+
+  .desktop({
+    .font-oswald-uppercase( 16px,20px);
+    color: @basic_white;
+    min-width: 244px;
+  });
+}

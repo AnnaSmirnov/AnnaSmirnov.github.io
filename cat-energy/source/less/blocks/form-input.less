@@ -1,0 +1,50 @@
+.form-input {
+  color: @special_dark-grey;
+  display: flex;
+  align-items: center;
+
+/* stylelint-disable */
+  input[type="number"]::-webkit-outer-spin-button,
+  input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+  }
+
+  input[type="number"],
+  input[type="number"]:hover,
+  input[type="number"]:focus {
+    appearance: none;
+    -moz-appearance: textfield;
+  }
+  /* stylelint-enable */
+}
+
+
+.form-input__input {
+  height: 46px;
+  width: 100%;
+  border: 1px solid @special_light-grey-border;
+  padding: 13px 5px 14px 14px;
+
+  .tablet ({
+  height: 52px;
+  padding: 10px 20px 11px 20px;
+  margin-left: 15px;
+  });
+
+  &:hover {
+    border: 1px solid @special_grey;
+  }
+
+  &:focus {
+    border: 1px solid @special_dark-grey;
+    outline: 1px solid @special_dark-grey;
+  }
+}
+
+.form-input__input--invalid {
+  border: 2px solid @status_error; //input-invalid
+}
+
+.form-input__input--valid {
+  border: 1px solid @special_dark-grey;
+}

@@ -1,0 +1,41 @@
+.coments {
+  margin-right: 38px;
+}
+
+.coments textarea {
+  width: 100%;
+  min-height: 150px;
+  resize: none;
+  border: 1px solid @special_light-grey-border;
+  padding: 10px 10px 10px 14px;
+  margin-bottom: 24px;
+
+  .tablet ({
+    width: 94%;
+    min-height: 174px;
+    padding: 10px 10px 10px 0;
+    margin-bottom: 60px;
+  });
+
+  .desktop ({
+    width: 100%;
+    margin-bottom: 60px;
+  });
+
+  &:focus {
+    outline: 2px solid @special_dark-grey;
+  }
+
+  &::placeholder {
+    .font-oswald-uppercase(16px,18px);
+    color: @special_dark-grey;
+    text-align: start;
+
+    .tablet ({
+      .font-oswald-uppercase(20px,30px);
+      color: @special_dark-grey;
+      text-align: start;
+      padding-left: 19px;
+    });
+  }
+}

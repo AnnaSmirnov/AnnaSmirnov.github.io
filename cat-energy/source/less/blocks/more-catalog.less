@@ -1,0 +1,128 @@
+.more-catalog__wrapper {
+  margin-bottom: 35px;
+
+  .tablet ({
+    margin-bottom: 76px;
+  });
+
+  .desktop ({
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    gap: 80px;
+    justify-content: space-between;
+    margin-bottom: 86px;
+  });
+}
+
+.more-catalog__title {
+  .font-oswald(24px,24px);
+  margin-top: 25px;
+  margin-bottom: 35px;
+
+  .tablet ({
+    .font-oswald(36px,36px);
+    margin-top: 65px;
+    margin-bottom: 80px;
+  });
+
+  .desktop ({
+    margin-top: 72px;
+    margin-bottom: 81px;
+    padding-left: calc((100% - 1220px - 72px) / 2);
+  });
+}
+
+.more-catalog__list {
+  .list();
+  margin-bottom: 34px;
+
+  .tablet ({
+    margin-bottom: 68px;
+  });
+
+  .desktop ({
+    margin-bottom: 0;
+  });
+}
+
+.more-catalog__promo {
+  height: 290px;
+  background-color: @basic_green;
+  background-image: url("../img/background/gift-photo-mobile.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/background/gift-photo-mobile@2x.png");
+  }
+
+  &::before {
+    .content();
+    background-image: url("../img/others_icon/icon_gift.svg");
+    background-repeat: no-repeat;
+    width: 78px;
+    height: 80px;
+    top: 58px;
+  }
+
+  .tablet ({
+    height: 200px;
+    flex-direction: row;
+    justify-content: flex-end;
+    background-image: url("../img/background/gift-photo-tablet.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/background/gift-photo-tablet@2x.png");
+    }
+
+    &::before {
+      top: 57px;
+      left: 75px;
+    }
+  });
+
+  .desktop ({
+    width: 245px;
+    height: 289px;
+
+    background-image: url("../img/background/gift-photo-desktop.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/background/gift-photo-desktop@2x.png");
+    }
+
+    &::before {
+      top: 57px;
+      left: 85px;
+    }
+  });
+}
+
+.more-catalog__promo-text {
+  .font-arial(16px,20px);
+  color: @basic_white;
+  text-align: center;
+  padding-top: 146px;
+  padding-left: 58px;
+  padding-right: 58px;
+
+  .tablet ({
+    padding-top: 0;
+    padding-left: 422px;
+    padding-right: 124px;
+    text-align: left;
+  });
+
+  .desktop ({
+    padding-top: 148px;
+    padding-left: 41px;
+    padding-right: 43px;
+    text-align: center;
+  });
+}

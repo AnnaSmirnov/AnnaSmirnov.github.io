@@ -1,0 +1,135 @@
+.form {
+  .font-oswald-uppercase(16px,18px);
+  color: @special_dark-grey;
+
+  .tablet ({
+    .font-oswald-uppercase(20px,29.64px);
+  });
+}
+
+.form__wrapper {
+  .wrapper-form();
+}
+
+.form fieldset {
+  .offset_zero();
+  border: 0 none;
+}
+
+.form__legend {
+  .offset_zero();
+  margin-bottom: 36px;
+
+  .tablet ({
+    padding-left: 30px;
+    margin-bottom: 76px;
+  });
+
+  .desktop ({
+    padding-left: 70px;
+    padding-left: calc((100% - 1220px - 72px) / 2);
+
+  });
+}
+
+.form__title {
+  .wrapper-form();
+  .font-oswald(36px,36px);
+  border-top: 1px solid @special_border;
+  padding-top: 26px;
+  padding-bottom: 38px;
+  text-align: left;
+
+  .tablet ({
+    .font-oswald(60px,60px);
+    border: none;
+    padding-top: 0;
+    margin-top: 53px;
+    margin-bottom: 55px;
+  });
+
+  .desktop ({
+    margin-top: 65px;
+  });
+}
+
+.form__text {
+  .wrapper-form();
+  .font-oswald-uppercase(14px,18px);
+  margin-bottom: 38px;
+  text-align: left;
+
+  .tablet ({
+    .font-oswald-uppercase(20px,30px);
+    margin-bottom: 66px;
+  });
+}
+
+.form__block {
+  .wrapper-form();
+  margin-bottom: 26px;
+
+  .tablet ({
+    margin-bottom: 77px;
+  });
+
+  .desktop ({
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    margin-bottom: 70px;
+  });
+}
+
+.form__button-block {
+  .wrapper-form();
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 32px;
+
+  .tablet ({
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 75px;
+  });
+
+  .desktop ({
+    margin-bottom :82px;
+  });
+}
+
+.form__button {
+  .font-oswald-uppercase(16px,20px);
+  color: @basic_white;
+  border: none;
+  width: 100%;
+
+  .tablet ({
+    .font-oswald-uppercase(20px,0);
+    color: @basic_white;
+    width: 285px;
+    min-height: 52px;
+  });
+
+  .desktop ({
+    width: 568px;
+  });
+}
+
+.form__note {
+  .font-arial(14px,16px);
+
+  .mobile ({
+    margin-top: 21px;
+    text-align: center;
+  });
+
+  .tablet ({
+    .font-arial(16px,16px);
+    margin-left: 61px;
+  });
+
+  .desktop ({
+    margin-left: 81px;
+  });
+}

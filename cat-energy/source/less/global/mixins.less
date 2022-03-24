@@ -1,0 +1,121 @@
+.list() {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.offset_zero() {
+  margin: 0;
+  padding: 0;
+}
+
+.content() {
+  position: absolute;
+  content: "";
+}
+
+.flex_center() {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.tablet(@rules) {
+  @media (min-width: @tablet-width) {
+    @rules();
+  }
+}
+
+.desktop(@rules) {
+  @media (min-width: @desktop-width) {
+    @rules();
+  }
+}
+
+.mobile(@rules) {
+  @media (max-width: @mobile-width-only) {
+    @rules();
+  }
+}
+
+.wrapper() {
+  width: 100%;
+  max-width: 767px;
+  margin: 0 auto;
+  padding: 0 @padding--mobile;
+
+  .tablet ({
+    width: 100%;
+    max-width: 1439px;
+    margin: 0 auto;
+    padding: 0 @padding--tablet;
+  });
+
+  .desktop ({
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 @padding--desktop;
+  });
+}
+
+.wrapper-form() {
+  width: 100%;
+  max-width: 767px;
+  margin: 0 auto;
+  padding: 0 @padding--mobile;
+
+  .tablet ({
+    width: 100%;
+    max-width: 1439px;
+    margin: 0 auto;
+    padding: 0 @padding--tablet;
+    padding-left: 70px;
+  });
+
+  .desktop ({
+    width: 100%;
+    max-width:  1440px;
+    margin: 0 auto;
+    padding: 0 @padding--desktop;
+  });
+}
+
+.font( @family, @weight, @size, @lineheight, @color, @style: normal) {
+  font-family: @family;
+  font-weight: @weight;
+  font-size: @size;
+  line-height: @lineheight;
+  color: @color;
+  font-style: @style;
+}
+
+.font-oswald( @size, @lineheight) {
+  font-size: @size;
+  line-height: @lineheight;
+  font-family: @oswald;
+  font-weight: normal;
+  font-style: normal;
+  color: @basic_black;
+  text-transform: none;
+}
+
+.font-oswald-uppercase( @size, @lineheight) {
+  font-size: @size;
+  line-height: @lineheight;
+  font-family: @oswald;
+  font-weight: normal;
+  font-style: normal;
+  text-transform: uppercase;
+  color: @basic_black;
+}
+
+.font-arial( @size, @lineheight) {
+  font-size: @size;
+  line-height: @lineheight;
+  font-family: @arial;
+  font-weight: normal;
+  font-style: normal;
+  text-transform: none;
+  color: @special_dark-grey;
+}

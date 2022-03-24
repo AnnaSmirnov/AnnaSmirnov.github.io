@@ -1,0 +1,49 @@
+.data {
+  .desktop ({
+    min-width: 570px;
+    margin-bottom: 0;
+  });
+}
+
+.data__list {
+  .list();
+  margin-bottom: 23px;
+
+  .tablet ({
+    margin-right: 36px;
+    margin-bottom: 72px;
+  });
+
+  .desktop ({
+    margin-right: 0;
+    margin-bottom: 0;
+  });
+}
+
+.data__item {
+  margin-bottom: 13px;
+
+  input {
+    &:nth-child(2) {
+      margin-left: 13px;
+    }
+  }
+
+  &:last-of-type {
+    margin-bottom: 22px;
+  }
+
+  .tablet ({
+    margin-bottom: 20px;
+
+  input {
+    &:nth-child(2) {
+      margin-left: 15px;
+    }
+  }
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  });
+}

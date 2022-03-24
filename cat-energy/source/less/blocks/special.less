@@ -1,0 +1,197 @@
+.special {
+  margin-bottom: 42px;
+
+  .tablet ({
+  margin-bottom: 0;
+
+    &::after {
+      content: "";
+      display: block;
+      width: 100%;
+      height: 1px;
+      background-color: @basic_grey;
+      margin-top: 47px;
+    }
+  });
+
+  .desktop ({
+      &::after {
+        display: none;
+      }
+  });
+}
+
+.special__title {
+  .offset_zero();
+  .font-oswald (36px, 40px);
+  margin-top: 27px;
+  margin-bottom: 40px;
+
+  .tablet({
+    .font-oswald (60px, 60px);
+    margin-top: 45px;
+    margin-bottom: 32px;
+  });
+
+  .desktop ({
+    margin-top: 71px;
+  });
+}
+
+.special__list {
+  .list();
+  .mobile ({
+    display:  grid;
+    row-gap: 20px;
+  });
+
+  .tablet ({
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap:37px;
+  column-gap: 60px;
+  });
+
+  .desktop ({
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 75px;
+  });
+}
+
+.special__text {
+  .mobile ({
+    margin: 0;
+  });
+
+  .tablet ({
+    max-width: 80%;
+  });
+  .desktop ({
+    max-width: 98%;
+  });
+}
+
+.special__item {
+  .font-arial( 14px, 18px);
+  min-height: 60px;
+  position: relative;
+  padding-left: 80px;
+
+  .tablet ({
+  .font-arial( 16px, 24px);
+  min-height: 280px;
+  min-width: 250px;
+  padding-top: 135px;
+  padding-left: 0;
+  });
+
+  &::before {
+    .content();
+    background-color: @basic_green;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 60px;
+    height: 60px;
+    left: 0;
+    top: -2px;
+
+    .tablet ({
+      width: 80px;
+      height: 80px;
+      top: 40px;
+    });
+  }
+}
+
+.special__item--composition {
+  &::before {
+    background-image: url("../img/main_img/icon_leaf.svg");
+  }
+
+  &::after {
+    .tablet ({
+      .content();
+      background-image: url("../img/main_img/number-1.svg");
+      background-repeat: no-repeat;
+      width: 112px;
+      height: 280px;
+      top: 40px;
+      right: 27%;
+      z-index: -1;
+    });
+
+    .desktop ({
+      right: 5%;
+    });
+  }
+}
+
+.special__item--form {
+  &::before {
+    background-image: url("../img/main_img/icon_tub.svg");
+  }
+
+  &::after {
+    .tablet ({
+      .content();
+      background-image: url("../img/main_img/number-2.svg");
+      background-repeat: no-repeat;
+      width: 134px;
+      height: 280px;
+      top: 40px;
+      right: 20%;
+      z-index: -1;
+    });
+
+    .desktop ({
+      right: -2%;
+    });
+  }
+}
+
+.special__item--food {
+  &::before {
+    background-image: url("../img/main_img/icon_eat.svg");
+  }
+
+  &::after {
+    .tablet ({
+      .content();
+      background-image: url("../img/main_img/number-3.svg");
+      background-repeat: no-repeat;
+      width: 134px;
+      height: 280px;
+      top: 40px;
+      right: 20%;
+      z-index: -1;
+    });
+
+    .desktop ({
+      right: -4%;
+    });
+  }
+}
+
+.special__item--result {
+  &::before {
+    background-image: url("../img/main_img/icon_alarm.svg");
+  }
+
+  &::after {
+    .tablet ({
+      .content();
+      background-image: url("../img/main_img/number-4.svg");
+      background-repeat: no-repeat;
+      width: 136px;
+      height: 280px;
+      top: 40px;
+      right: 20%;
+      z-index: -1;
+    });
+
+    .desktop ({
+      right: -5%;
+    });
+  }
+}
