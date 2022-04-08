@@ -115,7 +115,7 @@ ul {
   width: 100%;
   max-width: 767px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 10px;
 }
 @media (min-width: 768px) {
   .wrapper {
@@ -321,6 +321,7 @@ ul {
 @media (max-width: 768px) {
   .projects__item{
     width: 100%;
+    margin-right: 0;
   }
 }
 
