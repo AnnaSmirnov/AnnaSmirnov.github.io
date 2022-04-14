@@ -235,10 +235,8 @@ ul {
   font-weight: 400;
   text-align: center;
   font-size: 35px;
-  background: -o-radial-gradient(40% 50%, #f0d6de, #ffffff);
-  background: radial-gradient(40% 50%, #f0d6de, #ffffff);
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 @media (min-width: 1440px){
@@ -582,6 +580,7 @@ justify-content: center;
   display: flex;
   font-size: 20px;
   padding: 50px 15px;
+  align-items: center
 }
 
 @media (max-width: 768px) {
